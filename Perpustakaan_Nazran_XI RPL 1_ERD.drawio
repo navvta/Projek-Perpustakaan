@@ -1,0 +1,223 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ERD_Chen_Perpustakaan" id="erd-chen">
+    <mxGraphModel dx="1122" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="E_kategori" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" value="kategori" vertex="1">
+          <mxGeometry height="50" width="140" x="80" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="E_buku" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" value="buku" vertex="1">
+          <mxGeometry height="50" width="140" x="580" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="E_detail_peminjaman" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" value="detail_peminjaman" vertex="1">
+          <mxGeometry height="50" width="140" x="1080" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="E_anggota" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" value="anggota" vertex="1">
+          <mxGeometry height="50" width="140" x="580" y="775" as="geometry" />
+        </mxCell>
+        <mxCell id="E_peminjaman" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" value="peminjaman" vertex="1">
+          <mxGeometry height="50" width="140" x="1080" y="775" as="geometry" />
+        </mxCell>
+        <mxCell id="E_pengembalian" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" value="pengembalian" vertex="1">
+          <mxGeometry height="50" width="140" x="1580" y="775" as="geometry" />
+        </mxCell>
+        <mxCell id="A_kategori_id_kategori" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=4;fillColor=#ffffff;strokeColor=#666666;" value="id_kategori" vertex="1">
+          <mxGeometry height="44" width="150" x="75" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="A_kategori_nama_kategori" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=0;fillColor=#ffffff;strokeColor=#666666;" value="nama_kategori" vertex="1">
+          <mxGeometry height="44" width="150" x="75" y="408" as="geometry" />
+        </mxCell>
+        <mxCell id="A_buku_id_buku" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=4;fillColor=#ffffff;strokeColor=#666666;" value="id_buku" vertex="1">
+          <mxGeometry height="44" width="150" x="335" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="A_buku_isbn" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=0;fillColor=#ffffff;strokeColor=#666666;" value="isbn" vertex="1">
+          <mxGeometry height="44" width="150" x="495" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="A_buku_judul" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=0;fillColor=#ffffff;strokeColor=#666666;" value="judul" vertex="1">
+          <mxGeometry height="44" width="150" x="655" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="A_buku_pengarang" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=0;fillColor=#ffffff;strokeColor=#666666;" value="pengarang" vertex="1">
+          <mxGeometry height="44" width="150" x="815" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="A_buku_penerbit" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=0;fillColor=#ffffff;strokeColor=#666666;" value="penerbit" vertex="1">
+          <mxGeometry height="44" width="150" x="415" y="468" as="geometry" />
+        </mxCell>
+        <mxCell id="A_buku_tahun_terbit" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=0;fillColor=#ffffff;strokeColor=#666666;" value="tahun_terbit" vertex="1">
+          <mxGeometry height="44" width="150" x="575" y="468" as="geometry" />
+        </mxCell>
+        <mxCell id="A_buku_stok" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=0;fillColor=#ffffff;strokeColor=#666666;" value="stok" vertex="1">
+          <mxGeometry height="44" width="150" x="735" y="468" as="geometry" />
+        </mxCell>
+        <mxCell id="A_detail_peminjaman_id_detail" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=4;fillColor=#ffffff;strokeColor=#666666;" value="id_detail" vertex="1">
+          <mxGeometry height="44" width="150" x="995" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="A_detail_peminjaman_jumlah" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=0;fillColor=#ffffff;strokeColor=#666666;" value="jumlah" vertex="1">
+          <mxGeometry height="44" width="150" x="1155" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="A_anggota_id_anggota" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=4;fillColor=#ffffff;strokeColor=#666666;" value="id_anggota" vertex="1">
+          <mxGeometry height="44" width="150" x="415" y="628" as="geometry" />
+        </mxCell>
+        <mxCell id="A_anggota_kode_anggota" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=0;fillColor=#ffffff;strokeColor=#666666;" value="kode_anggota" vertex="1">
+          <mxGeometry height="44" width="150" x="575" y="628" as="geometry" />
+        </mxCell>
+        <mxCell id="A_anggota_nama" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=0;fillColor=#ffffff;strokeColor=#666666;" value="nama" vertex="1">
+          <mxGeometry height="44" width="150" x="735" y="628" as="geometry" />
+        </mxCell>
+        <mxCell id="A_anggota_alamat" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=0;fillColor=#ffffff;strokeColor=#666666;" value="alamat" vertex="1">
+          <mxGeometry height="44" width="150" x="415" y="938" as="geometry" />
+        </mxCell>
+        <mxCell id="A_anggota_no_telepon" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=0;fillColor=#ffffff;strokeColor=#666666;" value="no_telepon" vertex="1">
+          <mxGeometry height="44" width="150" x="575" y="938" as="geometry" />
+        </mxCell>
+        <mxCell id="A_anggota_tanggal_daftar" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=0;fillColor=#ffffff;strokeColor=#666666;" value="tanggal_daftar" vertex="1">
+          <mxGeometry height="44" width="150" x="735" y="938" as="geometry" />
+        </mxCell>
+        <mxCell id="A_peminjaman_id_peminjaman" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=4;fillColor=#ffffff;strokeColor=#666666;" value="id_peminjaman" vertex="1">
+          <mxGeometry height="44" width="150" x="935" y="638" as="geometry" />
+        </mxCell>
+        <mxCell id="A_peminjaman_kode_transaksi" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=0;fillColor=#ffffff;strokeColor=#666666;" value="kode_transaksi" vertex="1">
+          <mxGeometry height="44" width="150" x="1215" y="638" as="geometry" />
+        </mxCell>
+        <mxCell id="A_peminjaman_tanggal_pinjam" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=0;fillColor=#ffffff;strokeColor=#666666;" value="tanggal_pinjam" vertex="1">
+          <mxGeometry height="44" width="150" x="925" y="958" as="geometry" />
+        </mxCell>
+        <mxCell id="A_peminjaman_tanggal_jatuh_tempo" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=0;fillColor=#ffffff;strokeColor=#666666;" value="tanggal_jatuh_tempo" vertex="1">
+          <mxGeometry height="44" width="150" x="1085" y="958" as="geometry" />
+        </mxCell>
+        <mxCell id="A_peminjaman_status" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=0;fillColor=#ffffff;strokeColor=#666666;" value="status" vertex="1">
+          <mxGeometry height="44" width="150" x="1245" y="958" as="geometry" />
+        </mxCell>
+        <mxCell id="A_pengembalian_id_pengembalian" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=4;fillColor=#ffffff;strokeColor=#666666;" value="id_pengembalian" vertex="1">
+          <mxGeometry height="44" width="150" x="1465" y="628" as="geometry" />
+        </mxCell>
+        <mxCell id="A_pengembalian_tanggal_kembali" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=0;fillColor=#ffffff;strokeColor=#666666;" value="tanggal_kembali" vertex="1">
+          <mxGeometry height="44" width="150" x="1685" y="628" as="geometry" />
+        </mxCell>
+        <mxCell id="A_pengembalian_denda" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fontStyle=0;fillColor=#ffffff;strokeColor=#666666;" value="denda" vertex="1">
+          <mxGeometry height="44" width="150" x="1575" y="938" as="geometry" />
+        </mxCell>
+        <mxCell id="D_memiliki" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;" value="memiliki" vertex="1">
+          <mxGeometry height="80" width="150" x="325" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="D_dipinjam" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;" value="dipinjam" vertex="1">
+          <mxGeometry height="80" width="150" x="825" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="D_berisi" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;" value="berisi" vertex="1">
+          <mxGeometry height="80" width="150" x="1075" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="D_melakukan" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;" value="melakukan" vertex="1">
+          <mxGeometry height="80" width="150" x="825" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="D_dikembalikan" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;" value="dikembalikan" vertex="1">
+          <mxGeometry height="80" width="150" x="1325" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="x1" edge="1" parent="1" source="E_kategori" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_kategori_id_kategori" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x2" edge="1" parent="1" source="E_kategori" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_kategori_nama_kategori" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x3" edge="1" parent="1" source="E_buku" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_buku_id_buku" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x4" edge="1" parent="1" source="E_buku" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_buku_isbn" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x5" edge="1" parent="1" source="E_buku" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_buku_judul" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x6" edge="1" parent="1" source="E_buku" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_buku_pengarang" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x7" edge="1" parent="1" source="E_buku" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_buku_penerbit" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x8" edge="1" parent="1" source="E_buku" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_buku_tahun_terbit" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x9" edge="1" parent="1" source="E_buku" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_buku_stok" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x10" edge="1" parent="1" source="E_detail_peminjaman" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_detail_peminjaman_id_detail" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x11" edge="1" parent="1" source="E_detail_peminjaman" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_detail_peminjaman_jumlah" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x12" edge="1" parent="1" source="E_anggota" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_anggota_id_anggota" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x13" edge="1" parent="1" source="E_anggota" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_anggota_kode_anggota" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x14" edge="1" parent="1" source="E_anggota" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_anggota_nama" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x15" edge="1" parent="1" source="E_anggota" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_anggota_alamat" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x16" edge="1" parent="1" source="E_anggota" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_anggota_no_telepon" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x17" edge="1" parent="1" source="E_anggota" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_anggota_tanggal_daftar" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x18" edge="1" parent="1" source="E_peminjaman" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_peminjaman_id_peminjaman" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x19" edge="1" parent="1" source="E_peminjaman" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_peminjaman_kode_transaksi" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x20" edge="1" parent="1" source="E_peminjaman" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_peminjaman_tanggal_pinjam" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x21" edge="1" parent="1" source="E_peminjaman" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_peminjaman_tanggal_jatuh_tempo" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x22" edge="1" parent="1" source="E_peminjaman" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_peminjaman_status" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x23" edge="1" parent="1" source="E_pengembalian" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_pengembalian_id_pengembalian" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x24" edge="1" parent="1" source="E_pengembalian" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_pengembalian_tanggal_kembali" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x25" edge="1" parent="1" source="E_pengembalian" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="A_pengembalian_denda" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x26" edge="1" parent="1" source="E_kategori" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="D_memiliki" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x27" edge="1" parent="1" source="D_memiliki" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="E_buku" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x28" edge="1" parent="1" source="E_anggota" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="D_melakukan" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x29" edge="1" parent="1" source="D_melakukan" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="E_peminjaman" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x30" edge="1" parent="1" source="E_peminjaman" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="D_berisi" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x31" edge="1" parent="1" source="D_berisi" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="E_detail_peminjaman" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x32" edge="1" parent="1" source="E_buku" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="D_dipinjam" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x33" edge="1" parent="1" source="D_dipinjam" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="E_detail_peminjaman" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x34" edge="1" parent="1" source="E_peminjaman" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="D_dikembalikan" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x35" edge="1" parent="1" source="D_dikembalikan" style="endArrow=none;html=1;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#666666;" target="E_pengembalian" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
