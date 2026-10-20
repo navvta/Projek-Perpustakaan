@@ -1,0 +1,50 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.11.12217.175
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5DBB2203-A946-43CD-9D79-247CDEE157A3}"
+	ProjectSection(SolutionItems) = preProject
+		Projek Navta\FormAnggota.Designer.cs = Projek Navta\FormAnggota.Designer.cs
+		Projek Navta\FormAnggota.resx = Projek Navta\FormAnggota.resx
+		Projek Navta\FormBuku.cs = Projek Navta\FormBuku.cs
+		Projek Navta\FormBuku.Designer.cs = Projek Navta\FormBuku.Designer.cs
+		Projek Navta\FormBuku.resx = Projek Navta\FormBuku.resx
+		Projek Navta\FormDetailPeminjaman.cs = Projek Navta\FormDetailPeminjaman.cs
+		Projek Navta\FormDetailPeminjaman.Designer.cs = Projek Navta\FormDetailPeminjaman.Designer.cs
+		Projek Navta\FormKategori.cs = Projek Navta\FormKategori.cs
+		Projek Navta\FormKategori.Designer.cs = Projek Navta\FormKategori.Designer.cs
+		Projek Navta\FormKategori.resx = Projek Navta\FormKategori.resx
+		Projek Navta\FormPeminjaman.cs = Projek Navta\FormPeminjaman.cs
+		Projek Navta\FormPeminjaman.Designer.cs = Projek Navta\FormPeminjaman.Designer.cs
+		Projek Navta\FormPeminjaman.resx = Projek Navta\FormPeminjaman.resx
+		Projek Navta\FormPengembalian.cs = Projek Navta\FormPengembalian.cs
+		Projek Navta\FormPengembalian.Designer.cs = Projek Navta\FormPengembalian.Designer.cs
+		Projek Navta\FormPengembalian.resx = Projek Navta\FormPengembalian.resx
+		Projek Navta\FormUtama.cs = Projek Navta\FormUtama.cs
+		Projek Navta\FormUtama.Designer.cs = Projek Navta\FormUtama.Designer.cs
+		Projek Navta\FormUtama.resx = Projek Navta\FormUtama.resx
+		Projek Navta\packages.config = Projek Navta\packages.config
+		Projek Navta\Perpustakaan_Nazran_XIRPL1.csproj = Projek Navta\Perpustakaan_Nazran_XIRPL1.csproj
+		Projek Navta\Program.cs = Projek Navta\Program.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perpustakaan_Nazran_XIRPL1", "Perpustakaan_Nazran_XIRPL1.csproj", "{6F1B2A3C-4D5E-4F60-8A7B-9C0D1E2F3A4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F1B2A3C-4D5E-4F60-8A7B-9C0D1E2F3A4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F1B2A3C-4D5E-4F60-8A7B-9C0D1E2F3A4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F1B2A3C-4D5E-4F60-8A7B-9C0D1E2F3A4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F1B2A3C-4D5E-4F60-8A7B-9C0D1E2F3A4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E23B892F-86EE-4EF5-9987-43D897151B95}
+	EndGlobalSection
+EndGlobal

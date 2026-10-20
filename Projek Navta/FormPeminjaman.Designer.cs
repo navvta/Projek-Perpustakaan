@@ -30,8 +30,6 @@ namespace Project_Perpus_Nama_Kelas
             this.pnlJudul = new System.Windows.Forms.Panel();
             this.lblJudul = new System.Windows.Forms.Label();
             this.grpHeader = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
             this.cmbStatus = new System.Windows.Forms.ComboBox();
             this.lblKodeTransaksi = new System.Windows.Forms.Label();
             this.txtKodeTransaksi = new System.Windows.Forms.TextBox();
@@ -64,6 +62,14 @@ namespace Project_Perpus_Nama_Kelas
             this.label10 = new System.Windows.Forms.Label();
             this.cmbIDPeminjaman = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.pnlJudul.SuspendLayout();
             this.grpHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
@@ -97,6 +103,8 @@ namespace Project_Perpus_Nama_Kelas
             // 
             // grpHeader
             // 
+            this.grpHeader.Controls.Add(this.label2);
+            this.grpHeader.Controls.Add(this.textBox1);
             this.grpHeader.Controls.Add(this.label1);
             this.grpHeader.Controls.Add(this.txtID);
             this.grpHeader.Controls.Add(this.cmbStatus);
@@ -115,22 +123,6 @@ namespace Project_Perpus_Nama_Kelas
             this.grpHeader.TabIndex = 2;
             this.grpHeader.TabStop = false;
             this.grpHeader.Text = "Data Transaksi";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 28);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "ID Peminjaman";
-            // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(152, 27);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(250, 34);
-            this.txtID.TabIndex = 15;
             // 
             // cmbStatus
             // 
@@ -191,7 +183,7 @@ namespace Project_Perpus_Nama_Kelas
             // lblPinjam
             // 
             this.lblPinjam.AutoSize = true;
-            this.lblPinjam.Location = new System.Drawing.Point(440, 38);
+            this.lblPinjam.Location = new System.Drawing.Point(457, 36);
             this.lblPinjam.Name = "lblPinjam";
             this.lblPinjam.Size = new System.Drawing.Size(145, 28);
             this.lblPinjam.TabIndex = 9;
@@ -200,7 +192,7 @@ namespace Project_Perpus_Nama_Kelas
             // dtpPinjam
             // 
             this.dtpPinjam.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpPinjam.Location = new System.Drawing.Point(590, 35);
+            this.dtpPinjam.Location = new System.Drawing.Point(607, 33);
             this.dtpPinjam.Name = "dtpPinjam";
             this.dtpPinjam.Size = new System.Drawing.Size(160, 34);
             this.dtpPinjam.TabIndex = 10;
@@ -208,16 +200,17 @@ namespace Project_Perpus_Nama_Kelas
             // lblJatuhTempo
             // 
             this.lblJatuhTempo.AutoSize = true;
-            this.lblJatuhTempo.Location = new System.Drawing.Point(440, 115);
+            this.lblJatuhTempo.Location = new System.Drawing.Point(468, 79);
             this.lblJatuhTempo.Name = "lblJatuhTempo";
             this.lblJatuhTempo.Size = new System.Drawing.Size(121, 28);
             this.lblJatuhTempo.TabIndex = 11;
             this.lblJatuhTempo.Text = "Jatuh tempo";
+            this.lblJatuhTempo.Click += new System.EventHandler(this.lblJatuhTempo_Click);
             // 
             // dtpJatuhTempo
             // 
             this.dtpJatuhTempo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpJatuhTempo.Location = new System.Drawing.Point(590, 112);
+            this.dtpJatuhTempo.Location = new System.Drawing.Point(607, 73);
             this.dtpJatuhTempo.Name = "dtpJatuhTempo";
             this.dtpJatuhTempo.Size = new System.Drawing.Size(160, 34);
             this.dtpJatuhTempo.TabIndex = 12;
@@ -324,7 +317,11 @@ namespace Project_Perpus_Nama_Kelas
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.Detail);
@@ -572,6 +569,73 @@ namespace Project_Perpus_Nama_Kelas
             this.label11.TabIndex = 7;
             this.label11.Text = "ID Buku";
             // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(152, 27);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(250, 34);
+            this.txtID.TabIndex = 15;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(17, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(142, 28);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "ID Peminjaman";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(440, 147);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(161, 28);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Cari ID Anggota :";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(607, 144);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(160, 34);
+            this.textBox1.TabIndex = 17;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(75, 92);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(190, 28);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "Cari ID Peminjaman :";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(271, 92);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(160, 34);
+            this.textBox2.TabIndex = 19;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(694, 92);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(154, 28);
+            this.label4.TabIndex = 31;
+            this.label4.Text = "Cari Judul Buku :";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(854, 92);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(160, 34);
+            this.textBox3.TabIndex = 32;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
             // FormPeminjaman
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
@@ -625,8 +689,6 @@ namespace Project_Perpus_Nama_Kelas
         private System.Windows.Forms.Button btnHapus;
         private System.Windows.Forms.Button btnBersih;
         private ComboBox cmbStatus;
-        private Label label1;
-        private TextBox txtID;
         private DataGridView dgv;
         private GroupBox groupBox2;
         private Label label8;
@@ -645,5 +707,13 @@ namespace Project_Perpus_Nama_Kelas
         private Button button4;
         private DataGridView dgvBuku;
         private DataGridView dgvDetail;
+        private Label label2;
+        private TextBox textBox1;
+        private Label label1;
+        private TextBox txtID;
+        private Label label3;
+        private TextBox textBox2;
+        private Label label4;
+        private TextBox textBox3;
     }
 }

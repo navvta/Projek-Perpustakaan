@@ -523,5 +523,91 @@ namespace Project_Perpus_Nama_Kelas
             cmbIDPeminjaman.SelectedIndex = -1;
             nudJumlah.Value = 0;
         }
+
+        private void lblJatuhTempo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void Search(string nama)
+        {
+            string strQuery = "SELECT * FROM peminjaman WHERE id_anggota LIKE '%" + nama + "%'";
+            DataTable dt = new DataTable();
+            try
+            {
+                konek();
+                cmd = new MySqlCommand(strQuery, koneksi);
+                adp = new MySqlDataAdapter(cmd);
+                adp.Fill(dt);
+                dgv.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                disconek();
+            }
+        }
+
+        public void SearchIdPeminjaman(string nama)
+        {
+            string strQuery = "SELECT * FROM detail_peminjaman WHERE id_peminjaman LIKE '%" + nama + "%'";
+            DataTable dt = new DataTable();
+            try
+            {
+                konek();
+                cmd = new MySqlCommand(strQuery, koneksi);
+                adp = new MySqlDataAdapter(cmd);
+                adp.Fill(dt);
+                dgvDetail.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                disconek();
+            }
+        }
+
+        public void SearchBuku(string nama)
+        {
+            string strQuery = "SELECT * FROM buku WHERE judul LIKE '%" + nama + "%'";
+            DataTable dt = new DataTable();
+            try
+            {
+                konek();
+                cmd = new MySqlCommand(strQuery, koneksi);
+                adp = new MySqlDataAdapter(cmd);
+                adp.Fill(dt);
+                dgvBuku.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                disconek();
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            Search(textBox1.Text);
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            SearchIdPeminjaman(textBox2.Text);
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            SearchBuku(textBox3.Text);
+        }
     }
 }

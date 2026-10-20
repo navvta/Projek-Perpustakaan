@@ -34,6 +34,8 @@ namespace Project_Perpus_Nama_Kelas
             this.dgv = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pnlJudul.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
@@ -164,14 +166,14 @@ namespace Project_Perpus_Nama_Kelas
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgv.EnableHeadersVisualStyles = false;
-            this.dgv.Location = new System.Drawing.Point(20, 257);
+            this.dgv.Location = new System.Drawing.Point(20, 307);
             this.dgv.MultiSelect = false;
             this.dgv.Name = "dgv";
             this.dgv.ReadOnly = true;
             this.dgv.RowHeadersVisible = false;
             this.dgv.RowHeadersWidth = 62;
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv.Size = new System.Drawing.Size(500, 278);
+            this.dgv.Size = new System.Drawing.Size(500, 286);
             this.dgv.TabIndex = 8;
             this.dgv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellClick);
             // 
@@ -192,12 +194,32 @@ namespace Project_Perpus_Nama_Kelas
             this.txtID.Size = new System.Drawing.Size(340, 34);
             this.txtID.TabIndex = 10;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(24, 249);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(112, 28);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Cari Nama :";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(164, 246);
+            this.textBox1.MaxLength = 100;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(340, 34);
+            this.textBox1.TabIndex = 12;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // FormKategori
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(540, 556);
+            this.ClientSize = new System.Drawing.Size(540, 614);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.pnlJudul);
@@ -234,5 +256,7 @@ namespace Project_Perpus_Nama_Kelas
         private System.Windows.Forms.DataGridView dgv;
         private Label label1;
         private TextBox txtID;
+        private Label label2;
+        private TextBox textBox1;
     }
 }

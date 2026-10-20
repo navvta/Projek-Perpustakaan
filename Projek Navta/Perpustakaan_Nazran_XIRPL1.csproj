@@ -88,12 +88,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormDetailPeminjaman.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormDetailPeminjaman.Designer.cs">
-      <DependentUpon>FormDetailPeminjaman.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="FormUtama.cs">
       <SubType>Form</SubType>

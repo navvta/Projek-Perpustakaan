@@ -46,6 +46,8 @@ namespace Project_Perpus_Nama_Kelas
             this.dgv = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pnlJudul.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudTahun)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudStok)).BeginInit();
@@ -218,7 +220,7 @@ namespace Project_Perpus_Nama_Kelas
             this.btnSimpan.FlatAppearance.BorderSize = 0;
             this.btnSimpan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSimpan.ForeColor = System.Drawing.Color.White;
-            this.btnSimpan.Location = new System.Drawing.Point(24, 410);
+            this.btnSimpan.Location = new System.Drawing.Point(111, 412);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(105, 34);
             this.btnSimpan.TabIndex = 16;
@@ -233,7 +235,7 @@ namespace Project_Perpus_Nama_Kelas
             this.btnUbah.FlatAppearance.BorderSize = 0;
             this.btnUbah.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUbah.ForeColor = System.Drawing.Color.White;
-            this.btnUbah.Location = new System.Drawing.Point(144, 410);
+            this.btnUbah.Location = new System.Drawing.Point(231, 412);
             this.btnUbah.Name = "btnUbah";
             this.btnUbah.Size = new System.Drawing.Size(105, 34);
             this.btnUbah.TabIndex = 17;
@@ -248,7 +250,7 @@ namespace Project_Perpus_Nama_Kelas
             this.btnHapus.FlatAppearance.BorderSize = 0;
             this.btnHapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHapus.ForeColor = System.Drawing.Color.White;
-            this.btnHapus.Location = new System.Drawing.Point(264, 410);
+            this.btnHapus.Location = new System.Drawing.Point(351, 412);
             this.btnHapus.Name = "btnHapus";
             this.btnHapus.Size = new System.Drawing.Size(105, 34);
             this.btnHapus.TabIndex = 18;
@@ -263,7 +265,7 @@ namespace Project_Perpus_Nama_Kelas
             this.btnBersih.FlatAppearance.BorderSize = 0;
             this.btnBersih.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBersih.ForeColor = System.Drawing.Color.White;
-            this.btnBersih.Location = new System.Drawing.Point(384, 410);
+            this.btnBersih.Location = new System.Drawing.Point(471, 412);
             this.btnBersih.Name = "btnBersih";
             this.btnBersih.Size = new System.Drawing.Size(105, 34);
             this.btnBersih.TabIndex = 19;
@@ -299,14 +301,14 @@ namespace Project_Perpus_Nama_Kelas
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgv.EnableHeadersVisualStyles = false;
-            this.dgv.Location = new System.Drawing.Point(20, 485);
+            this.dgv.Location = new System.Drawing.Point(20, 539);
             this.dgv.MultiSelect = false;
             this.dgv.Name = "dgv";
             this.dgv.ReadOnly = true;
             this.dgv.RowHeadersVisible = false;
             this.dgv.RowHeadersWidth = 62;
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv.Size = new System.Drawing.Size(660, 245);
+            this.dgv.Size = new System.Drawing.Size(660, 220);
             this.dgv.TabIndex = 20;
             this.dgv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellClick);
             // 
@@ -327,12 +329,32 @@ namespace Project_Perpus_Nama_Kelas
             this.txtID.Size = new System.Drawing.Size(260, 34);
             this.txtID.TabIndex = 22;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(24, 482);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(106, 28);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Cari Judul :";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(164, 479);
+            this.textBox1.MaxLength = 20;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(260, 34);
+            this.textBox1.TabIndex = 24;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // FormBuku
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(700, 755);
+            this.ClientSize = new System.Drawing.Size(700, 784);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.pnlJudul);
@@ -395,5 +417,7 @@ namespace Project_Perpus_Nama_Kelas
         private System.Windows.Forms.DataGridView dgv;
         private Label label1;
         private TextBox txtID;
+        private Label label2;
+        private TextBox textBox1;
     }
 }

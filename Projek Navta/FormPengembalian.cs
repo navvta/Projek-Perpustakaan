@@ -266,9 +266,6 @@ namespace Project_Perpus_Nama_Kelas
             // Tampilkan hasil denda ke TextBox
             txtDenda.Text = totalDenda.ToString();
         }
-
-       
-
         private void btnSimpan_Click(object sender, EventArgs e)
         {
             queryInsert("INSERT into pengembalian values (0,'" + cmbTransaksi.Text + "','" + dtpKembali.Value.ToString("yyyy-MM-dd") + "','" + txtDenda.Text + "')");
@@ -303,34 +300,40 @@ namespace Project_Perpus_Nama_Kelas
             }
         }
 
-        private void btnHitungDenda_Click(object sender, EventArgs e)
+        private void dtpKembali_ValueChanged(object sender, EventArgs e)
         {
-            // Validasi: Pastikan petugas sudah memilih transaksi di ComboBox
-            if (cmbTransaksi.SelectedIndex == -1)
+            if (cmbTransaksi.SelectedIndex != -1)
             {
-                MessageBox.Show("Silakan pilih transaksi peminjaman terlebih dahulu!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                // Panggil rumus hitung denda otomatis berdasarkan tanggal kembali yang baru dipilih
+                HitungDendaOtomatis(dtpJatuhTempo.Value);
             }
+        }
 
-            int tarifDendaPerHari = 1000; // Tentukan tarif denda per hari (misal Rp 1.000)
-
-            DateTime jatuhTempo = dtpJatuhTempo.Value.Date;
-            DateTime tanggalKembali = dtpKembali.Value.Date;
-
-            // Hitung selisih hari
-            TimeSpan selisih = tanggalKembali - jatuhTempo;
-            int hariTerlambat = selisih.Days;
-
-            int totalDenda = 0;
-
-            // Jika telat lebih dari 0 hari
-            if (hariTerlambat > 0)
+        public void Search(string nama)
+        {
+            string strQuery = "SELECT * FROM pengembalian WHERE id_peminjaman LIKE '%" + nama + "%'";
+            DataTable dt = new DataTable();
+            try
             {
-                totalDenda = hariTerlambat * tarifDendaPerHari;
+                konek();
+                cmd = new MySqlCommand(strQuery, koneksi);
+                adp = new MySqlDataAdapter(cmd);
+                adp.Fill(dt);
+                dgv.DataSource = dt;
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                disconek();
+            }
+        }
 
-            // Masukkan hasil ke TextBox Denda
-            txtDenda.Text = totalDenda.ToString();
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            Search(textBox1.Text);
         }
     }
 }

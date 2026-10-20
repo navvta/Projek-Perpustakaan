@@ -21,8 +21,8 @@ namespace Project_Perpus_Nama_Kelas
 
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlJudul = new System.Windows.Forms.Panel();
             this.lblJudul = new System.Windows.Forms.Label();
             this.lblTransaksi = new System.Windows.Forms.Label();
@@ -40,7 +40,8 @@ namespace Project_Perpus_Nama_Kelas
             this.btnBersih = new System.Windows.Forms.Button();
             this.dgv = new System.Windows.Forms.DataGridView();
             this.dtpJatuhTempo = new System.Windows.Forms.DateTimePicker();
-            this.btnHitungDenda = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pnlJudul.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
@@ -128,6 +129,7 @@ namespace Project_Perpus_Nama_Kelas
             this.dtpKembali.Name = "dtpKembali";
             this.dtpKembali.Size = new System.Drawing.Size(160, 34);
             this.dtpKembali.TabIndex = 9;
+            this.dtpKembali.ValueChanged += new System.EventHandler(this.dtpKembali_ValueChanged);
             // 
             // lblDenda
             // 
@@ -217,32 +219,32 @@ namespace Project_Perpus_Nama_Kelas
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgv.ColumnHeadersHeight = 34;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgv.EnableHeadersVisualStyles = false;
-            this.dgv.Location = new System.Drawing.Point(20, 415);
+            this.dgv.Location = new System.Drawing.Point(20, 472);
             this.dgv.MultiSelect = false;
             this.dgv.Name = "dgv";
             this.dgv.ReadOnly = true;
             this.dgv.RowHeadersVisible = false;
             this.dgv.RowHeadersWidth = 62;
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv.Size = new System.Drawing.Size(840, 345);
+            this.dgv.Size = new System.Drawing.Size(840, 288);
             this.dgv.TabIndex = 21;
             this.dgv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellClick);
             // 
@@ -254,20 +256,22 @@ namespace Project_Perpus_Nama_Kelas
             this.dtpJatuhTempo.Size = new System.Drawing.Size(160, 34);
             this.dtpJatuhTempo.TabIndex = 22;
             // 
-            // btnHitungDenda
+            // label1
             // 
-            this.btnHitungDenda.BackColor = System.Drawing.Color.DarkCyan;
-            this.btnHitungDenda.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHitungDenda.FlatAppearance.BorderSize = 0;
-            this.btnHitungDenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHitungDenda.ForeColor = System.Drawing.Color.White;
-            this.btnHitungDenda.Location = new System.Drawing.Point(185, 245);
-            this.btnHitungDenda.Name = "btnHitungDenda";
-            this.btnHitungDenda.Size = new System.Drawing.Size(165, 34);
-            this.btnHitungDenda.TabIndex = 23;
-            this.btnHitungDenda.Text = "Hitung Denda";
-            this.btnHitungDenda.UseVisualStyleBackColor = false;
-            this.btnHitungDenda.Click += new System.EventHandler(this.btnHitungDenda_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 411);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(190, 28);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Cari ID Peminjaman :";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(233, 411);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(300, 34);
+            this.textBox1.TabIndex = 24;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // FormPengembalian
             // 
@@ -275,7 +279,8 @@ namespace Project_Perpus_Nama_Kelas
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(880, 780);
-            this.Controls.Add(this.btnHitungDenda);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dtpJatuhTempo);
             this.Controls.Add(this.pnlJudul);
             this.Controls.Add(this.lblTransaksi);
@@ -324,6 +329,7 @@ namespace Project_Perpus_Nama_Kelas
         private System.Windows.Forms.Button btnBersih;
         private System.Windows.Forms.DataGridView dgv;
         private DateTimePicker dtpJatuhTempo;
-        private Button btnHitungDenda;
+        private Label label1;
+        private TextBox textBox1;
     }
 }

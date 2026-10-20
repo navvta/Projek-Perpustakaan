@@ -166,6 +166,28 @@ namespace Project_Perpus_Nama_Kelas
             }
         }
 
+        public void Search(string nama)
+        {
+            string strQuery = "SELECT * FROM anggota WHERE nama LIKE '%" + nama + "%'";
+            DataTable dt = new DataTable();
+            try
+            {
+                konek();
+                cmd = new MySqlCommand(strQuery, koneksi);
+                adp = new MySqlDataAdapter(cmd);
+                adp.Fill(dt);
+                dgv.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                disconek();
+            }
+        }
+
         private void btnSimpan_Click(object sender, System.EventArgs e)
         {
             queryInsert("INSERT INTO anggota Values (0,'" + txtKode.Text + "','" + txtNama.Text + "','"+txtAlamat.Text+"','"+txtTelepon.Text+"','" + dtpDaftar.Value.ToString("yyyy-MM-dd") + "')");
@@ -207,6 +229,11 @@ namespace Project_Perpus_Nama_Kelas
             txtTelepon.Clear();
             txtAlamat.Clear();
             txtID.Clear();
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            Search(txtSearch.Text);
         }
     }
 }

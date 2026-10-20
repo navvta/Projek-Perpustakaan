@@ -194,5 +194,32 @@ namespace Project_Perpus_Nama_Kelas
         {
             baca();
         }
+
+        public void Search(string nama)
+        {
+            string strQuery = "SELECT * FROM kategori WHERE nama_kategori LIKE '%" + nama + "%'";
+            DataTable dt = new DataTable();
+            try
+            {
+                konek();
+                cmd = new MySqlCommand(strQuery, koneksi);
+                adp = new MySqlDataAdapter(cmd);
+                adp.Fill(dt);
+                dgv.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                disconek();
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            Search(textBox1.Text);
+        }
     }
 }
